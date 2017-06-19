@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        style="@style/LayoutView"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/LayoutView"
+            android:text="@string/Nearlyheadless" />
+
+        <LinearLayout
+            style="@style/LayoutView"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="Emily Watson" />
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="Emma Thompson" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutView"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/correctAnswer1"
+                style="@style/CheckView"
+                android:text="Emma Watson " />
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="Emma Woods" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer1"
+            style="@style/LayoutView"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/LayoutView"
+            android:text="@string/SorcererStone" />
+
+        <LinearLayout
+            style="@style/LayoutView"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="A broomstick  " />
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="Books" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutView"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/CheckView"
+                android:text="A wand" />
+
+            <CheckBox
+                android:id="@+id/correctAnswer2"
+                style="@style/CheckView"
+                android:text="An owl " />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer2"
+            style="@style/LayoutView"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/LayoutView"
+            android:text="@string/Harrydies" />
+
+        <RadioGroup
+            style="@style/LayoutView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioView"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/correctAnswer3"
+                style="@style/RadioView"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer3"
+            style="@style/LayoutView"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/LayoutView"
+            android:text="@string/author" />
+
+        <EditText
+            android:id="@+id/correctAnswer4"
+            style="@style/LayoutView" />
+
+        <TextView
+            android:id="@+id/answer4"
+            style="@style/LayoutView"
+            android:gravity="center" />
+
+        <Button
+            style="@style/LayoutView"
+            android:onClick="submitAnswers"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/totalScore"
+            style="@style/LayoutView"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+</ScrollView>
