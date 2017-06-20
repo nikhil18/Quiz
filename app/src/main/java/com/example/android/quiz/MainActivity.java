@@ -14,7 +14,7 @@ import static com.example.android.quiz.R.id.answer2;
 
 public class MainActivity extends AppCompatActivity {
 
-    int totalScore;
+    int totalScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
