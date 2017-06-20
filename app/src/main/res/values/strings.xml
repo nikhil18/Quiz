@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Harry Potter Quiz</string>
-    <string name="Nearlyheadless">Q1) In Harry Potter, who plays Hermione Granger?</string>
+    <string name="Parents">Q1) Who are harry potter\'s parents?</string>
     <string name="SorcererStone">Q2) In \'The Sorcerer\'s Stone\' besides a cake, what does Hagrid get Harry for his birthday?</string>
     <string name="Harrydies">Q3) Does Harry Potter Die in \'Deathly Hallows Part 2\'?</string>
-    <string name="author">Q4) Who is the Half-Blood Prince?</string>
+    <string name="halfBlood">Q4) Who is the Half-Blood Prince?</string>
 </resources>

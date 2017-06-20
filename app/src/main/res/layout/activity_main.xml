@@ -11,19 +11,21 @@
 
         <TextView
             style="@style/LayoutView"
-            android:text="@string/Nearlyheadless" />
+            android:text="@string/Parents" />
 
         <LinearLayout
             style="@style/LayoutView"
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/correctAnswer1a"
                 style="@style/CheckView"
-                android:text="Emily Watson" />
+                android:text="Lily Evans Potter" />
 
             <CheckBox
+                android:id="@+id/wrongAnswerb"
                 style="@style/CheckView"
-                android:text="Emma Thompson" />
+                android:text="John Potter" />
         </LinearLayout>
 
         <LinearLayout
@@ -31,55 +33,54 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/correctAnswer1"
+                android:id="@+id/correctAnswer1c"
                 style="@style/CheckView"
-                android:text="Emma Watson " />
+                android:text="James Potter" />
 
             <CheckBox
+                android:id="@+id/wrongAnswerd"
                 style="@style/CheckView"
-                android:text="Emma Woods" />
+                android:text="Lily Woods Potter" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/answer1"
             style="@style/LayoutView"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textAllCaps="true" />
 
         <TextView
             style="@style/LayoutView"
             android:text="@string/SorcererStone" />
 
-        <LinearLayout
-            style="@style/LayoutView"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/LayoutView">
 
-            <CheckBox
-                style="@style/CheckView"
-                android:text="A broomstick  " />
+            <RadioButton
+                android:id="@+id/wrongAnswer2a"
+                style="@style/RadioView"
+                android:text="A broomstick " />
 
-            <CheckBox
-                style="@style/CheckView"
+            <RadioButton
+                android:id="@+id/wrongAnswer2b"
+                style="@style/RadioView"
                 android:text="Books" />
-        </LinearLayout>
 
-        <LinearLayout
-            style="@style/LayoutView"
-            android:orientation="horizontal">
-
-            <CheckBox
-                style="@style/CheckView"
+            <RadioButton
+                android:id="@+id/wrongAnswer2c"
+                style="@style/RadioView"
                 android:text="A wand" />
 
-            <CheckBox
-                android:id="@+id/correctAnswer2"
-                style="@style/CheckView"
-                android:text="An owl " />
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/correctAnswer2d"
+                style="@style/RadioView"
+                android:text="An owl" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/answer2"
             style="@style/LayoutView"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textAllCaps="true" />
 
         <TextView
             style="@style/LayoutView"
@@ -90,6 +91,7 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/wrongAnswer3"
                 style="@style/RadioView"
                 android:text="Yes" />
 
@@ -102,11 +104,12 @@
         <TextView
             android:id="@+id/answer3"
             style="@style/LayoutView"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textAllCaps="true" />
 
         <TextView
             style="@style/LayoutView"
-            android:text="@string/author" />
+            android:text="@string/halfBlood" />
 
         <EditText
             android:id="@+id/correctAnswer4"
@@ -115,7 +118,8 @@
         <TextView
             android:id="@+id/answer4"
             style="@style/LayoutView"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textAllCaps="true" />
 
         <Button
             style="@style/LayoutView"
@@ -126,6 +130,7 @@
             android:id="@+id/totalScore"
             style="@style/LayoutView"
             android:gravity="center"
+            android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     </LinearLayout>
