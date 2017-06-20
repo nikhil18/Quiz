@@ -26,78 +26,78 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswers(View view) {
         int totalScore = 0;
-        CheckBox correctAnswer1aCheckbox = (CheckBox) findViewById(R.id.correctAnswer1a);
-        boolean hasCorrectAnswer1a = correctAnswer1aCheckbox.isChecked();
-        CheckBox correctAnswer1cCheckbox = (CheckBox) findViewById(R.id.correctAnswer1c);
-        boolean hasCorrectAnswer1c = correctAnswer1cCheckbox.isChecked();
-        CheckBox wrongAnswerbCheckbox = (CheckBox) findViewById(R.id.wrongAnswerb);
-        boolean hasWrongAnswerb = wrongAnswerbCheckbox.isChecked();
-        CheckBox wrongAnswerdCheckbox = (CheckBox) findViewById(R.id.wrongAnswerd);
-        boolean hasWrongAnswerd = wrongAnswerdCheckbox.isChecked();
-        RadioButton wrongAnswer2aCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2a);
-        boolean hasWrongAnswer2a = wrongAnswer2aCheckbox.isChecked();
-        RadioButton wrongAnswer2bCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2b);
-        boolean hasWrongAnswer2b = wrongAnswer2bCheckbox.isChecked();
-        RadioButton wrongAnswer2cCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2c);
-        boolean hasWrongAnswer2c = wrongAnswer2cCheckbox.isChecked();
-        RadioButton correctAnswer2dCheckbox = (RadioButton) findViewById(R.id.correctAnswer2d);
-        boolean hasCorrectAnswer2d = correctAnswer2dCheckbox.isChecked();
+        CheckBox correctAnswerACheckbox = (CheckBox) findViewById(R.id.correctAnswerA);
+        boolean hasCorrectAnswerA = correctAnswerACheckbox.isChecked();
+        CheckBox correctAnswerCCheckbox = (CheckBox) findViewById(R.id.correctAnswerC);
+        boolean hasCorrectAnswerC = correctAnswerCCheckbox.isChecked();
+        CheckBox wrongAnswerBCheckbox = (CheckBox) findViewById(R.id.wrongAnswerB);
+        boolean hasWrongAnswerB = wrongAnswerBCheckbox.isChecked();
+        CheckBox wrongAnswerDCheckbox = (CheckBox) findViewById(R.id.wrongAnswerD);
+        boolean hasWrongAnswerD = wrongAnswerDCheckbox.isChecked();
+        RadioButton wrongAnswer2ACheckbox = (RadioButton) findViewById(R.id.wrongAnswer2A);
+        boolean hasWrongAnswer2A = wrongAnswer2ACheckbox.isChecked();
+        RadioButton wrongAnswer2BCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2B);
+        boolean hasWrongAnswer2B = wrongAnswer2BCheckbox.isChecked();
+        RadioButton wrongAnswer2CCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2C);
+        boolean hasWrongAnswer2C = wrongAnswer2CCheckbox.isChecked();
+        RadioButton correctAnswer2DCheckbox = (RadioButton) findViewById(R.id.correctAnswer2D);
+        boolean hasCorrectAnswer2D = correctAnswer2DCheckbox.isChecked();
         RadioButton correctAnswer3Checkbox = (RadioButton) findViewById(R.id.correctAnswer3);
         boolean hasCorrectAnswer3 = correctAnswer3Checkbox.isChecked();
         RadioButton wrongAnswer3Checkbox = (RadioButton) findViewById(R.id.wrongAnswer3);
         boolean hasWrongAnswer3 = wrongAnswer3Checkbox.isChecked();
         EditText hascorrectAnswer4 = (EditText) findViewById(R.id.correctAnswer4);
-        if (hasCorrectAnswer1a == true & hasCorrectAnswer1c == true) {
+        if (hasCorrectAnswerA == true & hasCorrectAnswerC == true) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("correct");
         }
-        if (hasWrongAnswerb == true & hasWrongAnswerd == true) {
+        if (hasWrongAnswerB == true & hasWrongAnswerD == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("wrong");
         }
-        if (hasCorrectAnswer1c == true & hasWrongAnswerd == true) {
+        if (hasCorrectAnswerC == true & hasWrongAnswerD == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("mother's name is wrong");
         }
-        if (hasCorrectAnswer1a == true & hasWrongAnswerb == true) {
+        if (hasCorrectAnswerA == true & hasWrongAnswerB == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("father's name is wrong");
         }
-        if (hasCorrectAnswer1a == true & hasWrongAnswerd == true) {
+        if (hasCorrectAnswerA == true & hasWrongAnswerD == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("father's name is not there");
         }
-        if (hasCorrectAnswer1c == true & hasWrongAnswerb == true) {
+        if (hasCorrectAnswerC == true & hasWrongAnswerB == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("mother's name is not there");
         }
-        if (hasWrongAnswerd == false & hasWrongAnswerb == false & hasCorrectAnswer1a == false & hasCorrectAnswer1c == false) {
+        if (hasWrongAnswerD == false & hasWrongAnswerB == false & hasCorrectAnswerA == false & hasCorrectAnswerC == false) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("");
         }
-        if (hasCorrectAnswer2d == true) {
+        if (hasCorrectAnswer2D == true) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("correct");
         }
-        if (hasWrongAnswer2a == true) {
+        if (hasWrongAnswer2A == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");
         }
-        if (hasWrongAnswer2b == true) {
+        if (hasWrongAnswer2B == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");
         }
-        if (hasWrongAnswer2c == true) {
+        if (hasWrongAnswer2C == true) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");

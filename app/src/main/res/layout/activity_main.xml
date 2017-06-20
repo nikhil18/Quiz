@@ -18,12 +18,12 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/correctAnswer1a"
+                android:id="@+id/correctAnswerA"
                 style="@style/CheckView"
                 android:text="Lily Evans Potter" />
 
             <CheckBox
-                android:id="@+id/wrongAnswerb"
+                android:id="@+id/wrongAnswerB"
                 style="@style/CheckView"
                 android:text="John Potter" />
         </LinearLayout>
@@ -33,12 +33,12 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/correctAnswer1c"
+                android:id="@+id/correctAnswerC"
                 style="@style/CheckView"
                 android:text="James Potter" />
 
             <CheckBox
-                android:id="@+id/wrongAnswerd"
+                android:id="@+id/wrongAnswerD"
                 style="@style/CheckView"
                 android:text="Lily Woods Potter" />
         </LinearLayout>
@@ -56,22 +56,22 @@
         <RadioGroup style="@style/LayoutView">
 
             <RadioButton
-                android:id="@+id/wrongAnswer2a"
+                android:id="@+id/wrongAnswer2A"
                 style="@style/RadioView"
                 android:text="A broomstick " />
 
             <RadioButton
-                android:id="@+id/wrongAnswer2b"
+                android:id="@+id/wrongAnswer2B"
                 style="@style/RadioView"
                 android:text="Books" />
 
             <RadioButton
-                android:id="@+id/wrongAnswer2c"
+                android:id="@+id/wrongAnswer2C"
                 style="@style/RadioView"
                 android:text="A wand" />
 
             <RadioButton
-                android:id="@+id/correctAnswer2d"
+                android:id="@+id/correctAnswer2D"
                 style="@style/RadioView"
                 android:text="An owl" />
         </RadioGroup>
