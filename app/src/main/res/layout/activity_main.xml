@@ -129,6 +129,7 @@
             android:id="@+id/answer4"
             style="@style/LayoutView"
             android:gravity="center"
+            android:textAllCaps="true"
             android:textColor="@color/textColor"/>
 
         <Button
