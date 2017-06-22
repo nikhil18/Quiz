@@ -18,5 +18,6 @@
     <string name="correct">correct</string>
     <string name="wrong">wrong</string>
     <string name="severus">Severus Snape</string>
+    <string name="total">TOTAL SCORE = </string>
     
 </resources>

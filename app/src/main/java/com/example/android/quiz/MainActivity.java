@@ -9,6 +9,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.android.quiz.R.id.answer4;
+import static com.example.android.quiz.R.id.correctAnswer4;
 import static com.example.android.quiz.R.id.totalScore;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,75 +31,39 @@ public class MainActivity extends AppCompatActivity {
         boolean hasWrongAnswerB = wrongAnswerBCheckbox.isChecked();
         CheckBox wrongAnswerDCheckbox = (CheckBox) findViewById(R.id.wrongAnswerD);
         boolean hasWrongAnswerD = wrongAnswerDCheckbox.isChecked();
-        RadioButton wrongAnswer2ACheckbox = (RadioButton) findViewById(R.id.wrongAnswer2A);
-        boolean hasWrongAnswer2A = wrongAnswer2ACheckbox.isChecked();
-        RadioButton wrongAnswer2BCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2B);
-        boolean hasWrongAnswer2B = wrongAnswer2BCheckbox.isChecked();
-        RadioButton wrongAnswer2CCheckbox = (RadioButton) findViewById(R.id.wrongAnswer2C);
-        boolean hasWrongAnswer2C = wrongAnswer2CCheckbox.isChecked();
         RadioButton correctAnswer2DCheckbox = (RadioButton) findViewById(R.id.correctAnswer2D);
         boolean hasCorrectAnswer2D = correctAnswer2DCheckbox.isChecked();
         RadioButton correctAnswer3Checkbox = (RadioButton) findViewById(R.id.correctAnswer3);
         boolean hasCorrectAnswer3 = correctAnswer3Checkbox.isChecked();
-        RadioButton wrongAnswer3Checkbox = (RadioButton) findViewById(R.id.wrongAnswer3);
-        boolean hasWrongAnswer3 = wrongAnswer3Checkbox.isChecked();
-        EditText hascorrectAnswer4 = (EditText) findViewById(R.id.correctAnswer4);
-        String isCorrect = getString(R.string.correct);
-        String isWrong = getString(R.string.wrong);
-        String isSeverus = getString(R.string.severus);
+        EditText answer4 = (EditText) findViewById(correctAnswer4);
+        String Correct = getString(R.string.correct);
+        String Wrong = getString(R.string.wrong);
         if (!hasWrongAnswerD & !hasWrongAnswerB & hasCorrectAnswerA & hasCorrectAnswerC) {
             totalScore += 1;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1(isCorrect);
+            displayAnswer1(Correct);
         }else{
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1(isWrong);
+            displayAnswer1(Wrong);
         }
         if (hasCorrectAnswer2D) {
             totalScore += 1;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer2(isCorrect);
-        }
-        if (hasWrongAnswer2A) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer2(isWrong);
-        }
-        if (hasWrongAnswer2B) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer2(isWrong);
-        }
-        if (hasWrongAnswer2C) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer2(isWrong);
+            displayAnswer2(Correct);
+        }else {
+            displayAnswer2(Wrong);
         }
         if (hasCorrectAnswer3) {
             totalScore += 1;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer3(isCorrect);
+            displayAnswer3(Correct);
+        }else{
+            displayAnswer3(Wrong);
         }
-        if (hasWrongAnswer3) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer3(isWrong);
-        }
-        if (hascorrectAnswer4.getText().toString().equals(isSeverus)) {
+        if (answer4.getText().toString().equals(getString(R.string.severus))) {
             totalScore += 1;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer4(isCorrect);
-        } else if (hascorrectAnswer4.getText().toString().equals("")) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer4("");
+            displayAnswer4(Correct);
         } else {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer4(isWrong);
+            displayAnswer4(Wrong);
         }
-        Toast.makeText(this,"TOTAL SCORE = " + totalScore, Toast.LENGTH_SHORT).show();
+        displayTotalScore((getString(R.string.total)) +  totalScore);
+        Toast.makeText(this,(getString(R.string.total)) +  totalScore, Toast.LENGTH_SHORT).show();
     }
 
     public void displayAnswer1(String answer) {
@@ -116,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayAnswer4(String answer) {
-        TextView answerView4 = (TextView) findViewById(R.id.answer4);
+        TextView answerView4 = (TextView) findViewById(answer4);
         answerView4.setText(String.valueOf(answer));
     }
 

@@ -10,7 +10,7 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/LayoutView"
+            style="@style/questionStyle"
             android:text="@string/Parents"
             android:textColor="@color/textColor" />
 
@@ -47,13 +47,11 @@
 
         <TextView
             android:id="@+id/answer1"
-            style="@style/LayoutView"
-            android:gravity="center"
-            android:textAllCaps="true"
+            style="@style/resultsStyle"
             android:textColor="@color/textColor" />
 
         <TextView
-            style="@style/LayoutView"
+            style="@style/questionStyle"
             android:text="@string/SorcererStone"
             android:textColor="@color/textColor" />
 
@@ -61,17 +59,14 @@
             style="@style/LayoutView">
 
             <RadioButton
-                android:id="@+id/wrongAnswer2A"
                 style="@style/RadioView"
                 android:text="@string/broomstick" />
 
             <RadioButton
-                android:id="@+id/wrongAnswer2B"
                 style="@style/RadioView"
                 android:text="@string/books" />
 
             <RadioButton
-                android:id="@+id/wrongAnswer2C"
                 style="@style/RadioView"
                 android:text="@string/wand" />
 
@@ -83,19 +78,17 @@
 
         <TextView
             android:id="@+id/answer2"
-            style="@style/LayoutView"
-            android:gravity="center"
-            android:textAllCaps="true"
+            style="@style/resultsStyle"
             android:textColor="@color/textColor" />
 
         <TextView
-            style="@style/LayoutView"
+            style="@style/questionStyle"
             android:text="@string/Harrydies"
             android:textColor="@color/textColor" />
 
         <RadioGroup
-            style="@style/LayoutView"
-            android:orientation="horizontal">
+            style="@style/questionStyle"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/wrongAnswer3"
@@ -110,13 +103,11 @@
 
         <TextView
             android:id="@+id/answer3"
-            style="@style/LayoutView"
-            android:gravity="center"
-            android:textAllCaps="true"
+            style="@style/resultsStyle"
             android:textColor="@color/textColor" />
 
         <TextView
-            style="@style/LayoutView"
+            style="@style/questionStyle"
             android:text="@string/halfBlood"
             android:textColor="@color/textColor" />
 
@@ -127,22 +118,18 @@
 
         <TextView
             android:id="@+id/answer4"
-            style="@style/LayoutView"
-            android:gravity="center"
-            android:textAllCaps="true"
+            style="@style/resultsStyle"
             android:textColor="@color/textColor"/>
 
         <Button
-            style="@style/LayoutView"
+            style="@style/resultsStyle"
             android:onClick="submitAnswers"
             android:text="@string/submit"
             android:textColor="@color/textColor" />
 
         <TextView
             android:id="@+id/totalScore"
-            style="@style/LayoutView"
-            android:gravity="center"
-            android:textAllCaps="true"
+            style="@style/resultsStyle"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/textColor" />
 
