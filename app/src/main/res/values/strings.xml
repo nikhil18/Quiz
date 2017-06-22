@@ -4,4 +4,16 @@
     <string name="SorcererStone">Q2) In \'The Sorcerer\'s Stone\' besides a cake, what does Hagrid get Harry for his birthday?</string>
     <string name="Harrydies">Q3) Does Harry Potter Die in \'Deathly Hallows Part 2\'?</string>
     <string name="halfBlood">Q4) Who is the Half-Blood Prince?</string>
+    <string name="lilypotter">Lily Evans Potter</string>
+    <string name="johnpotter">John Potter</string>
+    <string name="jamespotter">James Potter</string>
+    <string name="lilywoods">Lily Woods Potter</string>
+    <string name="broomstick">A broomstick</string>
+    <string name="books">Books</string>
+    <string name="wand">A Wand</string>
+    <string name="owl">An Owl</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="submit">Submit</string>
+    
 </resources>

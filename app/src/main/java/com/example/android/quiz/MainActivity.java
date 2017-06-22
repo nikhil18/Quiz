@@ -1,8 +1,7 @@
 package com.example.android.quiz;
 
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -10,10 +9,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.R.attr.duration;
-import static android.R.attr.id;
-import static com.example.android.quiz.R.id.answer1;
-import static com.example.android.quiz.R.id.answer2;
 import static com.example.android.quiz.R.id.totalScore;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,67 +42,41 @@ public class MainActivity extends AppCompatActivity {
         RadioButton wrongAnswer3Checkbox = (RadioButton) findViewById(R.id.wrongAnswer3);
         boolean hasWrongAnswer3 = wrongAnswer3Checkbox.isChecked();
         EditText hascorrectAnswer4 = (EditText) findViewById(R.id.correctAnswer4);
-        if (hasCorrectAnswerA == true & hasCorrectAnswerC == true) {
+        if (!hasWrongAnswerD & !hasWrongAnswerB & hasCorrectAnswerA & hasCorrectAnswerC) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("correct");
-        }
-        if (hasWrongAnswerB == true & hasWrongAnswerD == true) {
+        }else{
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer1("wrong");
         }
-        if (hasCorrectAnswerC == true & hasWrongAnswerD == true) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1("mother's name is wrong");
-        }
-        if (hasCorrectAnswerA == true & hasWrongAnswerB == true) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1("father's name is wrong");
-        }
-        if (hasCorrectAnswerA == true & hasWrongAnswerD == true) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1("father's name is not there");
-        }
-        if (hasCorrectAnswerC == true & hasWrongAnswerB == true) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1("mother's name is not there");
-        }
-        if (hasWrongAnswerD == false & hasWrongAnswerB == false & hasCorrectAnswerA == false & hasCorrectAnswerC == false) {
-            totalScore += 0;
-            displayTotalScore("total score = " + totalScore);
-            displayAnswer1("");
-        }
-        if (hasCorrectAnswer2D == true) {
+        if (hasCorrectAnswer2D) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("correct");
         }
-        if (hasWrongAnswer2A == true) {
+        if (hasWrongAnswer2A) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");
         }
-        if (hasWrongAnswer2B == true) {
+        if (hasWrongAnswer2B) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");
         }
-        if (hasWrongAnswer2C == true) {
+        if (hasWrongAnswer2C) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer2("wrong");
         }
-        if (hasCorrectAnswer3 == true) {
+        if (hasCorrectAnswer3) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
             displayAnswer3("correct");
         }
-        if (hasWrongAnswer3 == true) {
+        if (hasWrongAnswer3) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
             displayAnswer3("wrong");
@@ -125,11 +94,7 @@ public class MainActivity extends AppCompatActivity {
             displayTotalScore("total score = " + totalScore);
             displayAnswer4("wrong");
         }
-        Context context = getApplicationContext();
-        CharSequence text = "TOTAL SCORE = " + totalScore;
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        Toast.makeText(this,"TOTAL SCORE = " + totalScore, Toast.LENGTH_SHORT).show();
     }
 
     public void displayAnswer1(String answer) {
