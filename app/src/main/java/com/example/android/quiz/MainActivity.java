@@ -42,49 +42,52 @@ public class MainActivity extends AppCompatActivity {
         RadioButton wrongAnswer3Checkbox = (RadioButton) findViewById(R.id.wrongAnswer3);
         boolean hasWrongAnswer3 = wrongAnswer3Checkbox.isChecked();
         EditText hascorrectAnswer4 = (EditText) findViewById(R.id.correctAnswer4);
+        String isCorrect = getString(R.string.correct);
+        String isWrong = getString(R.string.wrong);
+        String isSeverus = getString(R.string.severus);
         if (!hasWrongAnswerD & !hasWrongAnswerB & hasCorrectAnswerA & hasCorrectAnswerC) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer1("correct");
+            displayAnswer1(isCorrect);
         }else{
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer1("wrong");
+            displayAnswer1(isWrong);
         }
         if (hasCorrectAnswer2D) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer2("correct");
+            displayAnswer2(isCorrect);
         }
         if (hasWrongAnswer2A) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer2("wrong");
+            displayAnswer2(isWrong);
         }
         if (hasWrongAnswer2B) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer2("wrong");
+            displayAnswer2(isWrong);
         }
         if (hasWrongAnswer2C) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer2("wrong");
+            displayAnswer2(isWrong);
         }
         if (hasCorrectAnswer3) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer3("correct");
+            displayAnswer3(isCorrect);
         }
         if (hasWrongAnswer3) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer3("wrong");
+            displayAnswer3(isWrong);
         }
-        if (hascorrectAnswer4.getText().toString().equals("Severus Snape")) {
+        if (hascorrectAnswer4.getText().toString().equals(isSeverus)) {
             totalScore += 1;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer4("correct");
+            displayAnswer4(isCorrect);
         } else if (hascorrectAnswer4.getText().toString().equals("")) {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
@@ -92,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             totalScore += 0;
             displayTotalScore("total score = " + totalScore);
-            displayAnswer4("wrong");
+            displayAnswer4(isWrong);
         }
         Toast.makeText(this,"TOTAL SCORE = " + totalScore, Toast.LENGTH_SHORT).show();
     }
